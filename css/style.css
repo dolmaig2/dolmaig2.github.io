@@ -1,0 +1,511 @@
+header>a{
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#gomain{
+    width: 70px;
+    height: 25px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    margin-left: 30px;
+    margin-top: 30px;
+    opacity: .5;
+    border: 2px solid white;
+    border-radius: 10px;
+    /* float: left; */
+    
+}
+#gomain:hover{
+    opacity: 1;
+    /* box-shadow: 1px 1px 1px black; */
+}
+/* index.html */
+#headerspace{
+    height: 50px;
+}
+#listnone{
+    list-style-type: none;
+}
+#menu{
+    text-align: left;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+#logo{
+    text-decoration: none;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 1px 1px 1px black;
+
+    
+}
+
+#headerlogin{
+    height: 50px;
+}
+#headermenu{
+    float:right;
+    list-style-type: none;
+    /* clear: both; */
+    margin-right:10%;
+    /* display: inline-block; */
+    
+}
+
+
+#taek{
+    font-size: 5em;
+   
+}
+
+#ex{
+    font-family: Arial, Helvetica, sans-serif;
+    color: cornsilk;
+    font-size: large;
+}
+
+#indexbody{
+    /* width: 100%; */
+    height: 650px;
+    background-image:url(../images/background.png);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    background-attachment: fixed;
+}
+footer{
+    width:100%;
+    height:40px;
+    /* padding-top:20%; */
+    /* background-color:white; */
+    color: white;
+    /* opacity: 50; */
+
+    
+    }
+#main{
+    width: 320px;
+    height: 140px;
+    /* border: 1px solid black; */
+    /* margin:0 auto;  */
+    background-color: #2c2954;
+    margin:0 auto;
+    padding: 10px;
+}
+#main:hover{
+    background-color: #2c5080;
+    /* color : #2c2954 */
+}
+#mainbox{
+    width: 70%;
+    margin:0 auto;
+}
+#mainstart{
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 90px;
+    height: 22px;
+    margin:0 auto; 
+    box-shadow: 1px 1px 1px gray;
+}
+#mainstart:hover{
+    color: gold;
+    border-color: gold;
+}
+
+/*  */
+
+
+/* travel */
+#travelbody{
+    /* width: 100%; */
+    height: 650px;
+    background-image:url(../images/tbackground.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    background-attachment: fixed;
+}
+
+#travelmenu{
+    text-align: left;
+    font-size: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    margin:0 auto;
+}
+#travelmenu #tex{
+    text-align: left;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    margin:0 auto;
+}
+#travel1{
+    width: 400px;
+    height: 230px;
+    /* border: 1px solid black; */
+    /* margin:0 auto;  */
+    background-color: rebeccapurple;
+    margin:0 auto;
+    padding: 10px;
+    overflow: hidden;
+}
+#travel1:hover{
+    background-image:url(../images/pusan.jpg);
+    width: 650px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    /* background-attachment: fixed; */
+    transition-duration: 1s;
+    text-shadow: 1px 1px 1px black;
+}
+#travel2{
+    width: 400px;
+    height: 230px;
+    /* border: 1px solid black; */
+    /* margin:0 auto;  */
+    background-color: rosybrown;
+    margin:0 auto;
+    padding: 10px;
+    overflow: hidden;
+}
+#travel2:hover{
+    background-image:url(../images/jeonju.jpg);
+    width: 650px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    /* background-attachment: fixed; */
+    transition-duration: 1s;
+    text-shadow: 1px 1px 1px black;
+}
+#travel3{
+    width: 400px;
+    height: 230px;
+    /* border: 1px solid black; */
+    /* margin:0 auto;  */
+    background-color: #2c2954;
+    margin:0 auto;
+    padding: 10px;
+    overflow: hidden;
+}
+#travel3:hover{
+    background-image:url(../images/andong.jpg);
+    width: 650px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    /* background-attachment: fixed; */
+    transition-duration: 1s;
+    text-shadow: 1px 1px 1px black;
+}
+#travel4{
+    width: 400px;
+    height: 230px;
+    /* border: 1px solid black; */
+    /* margin:0 auto;  */
+    background-color: slategray;
+    margin:0 auto;
+    padding: 10px;
+    overflow: hidden;
+}
+#travel4:hover{
+    background-image:url(../images/pohang.jpg);
+    width: 650px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    /* background-attachment: fixed; */
+    transition-duration: 1s;
+    text-shadow: 1px 1px 1px black;
+}
+#travelbox{
+    width: 70%;
+    margin:0 auto;
+}
+
+#travelstart{
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 90px;
+    height: 22px;
+    margin:0 auto; 
+    box-shadow: 1px 1px 1px gray;
+}
+#travelstart:hover{
+    color: gold;
+    border-color: gold;
+}
+
+#hr{
+    visibility: hidden;
+}
+/*  */
+
+/* myself */
+#mytop{
+    height: 200px;
+    width: 100%;
+    margin:0 auto; 
+    /* background-color: ivory; */
+    /* background-attachment: fixed; */
+
+}
+#mybody{
+    /* height: 0px; */
+    background-image: url(../images/mybody.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    /* background-attachment: fixed; */
+}
+#myfooter{
+    color: white;
+    margin-bottom: 10px;
+}
+#myname{
+    color: white;
+    text-shadow: 2px 2px 2px gray;
+    text-align: center;
+    margin-top: initial;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5em;
+}
+#mybox{
+    width: 70%;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+}
+#mybox>p{
+    text-align: center;
+    color: white;
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
+    /* text-shadow: 1px 1px 1px gray; */
+}
+#mypic{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-image: url(../images/mypic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    margin: 0 auto;
+}
+#mypic:hover{
+    width: 300px;
+    height: 300px;
+    border-radius: 0px;
+    transition-duration: 1s;
+}
+#mybox>p{
+    transform: translateX(230px);
+    opacity: 0;
+    transition-duration: .6s;
+}
+#mybox #pl{
+    transform: translateX(-230px);
+    opacity: 0;
+    transition-duration: .6s;
+}
+#mybox:hover p{
+    transform: translateX(0);
+    opacity: 1;
+}
+#mybox:hover #pl{
+    transform: translateX(0);
+    opacity: 1;
+}
+#sns{
+    width: 120px;
+    height: 60px;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+    /* overflow: ; */
+}
+#insta{
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/insta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    /* margin: 0 auto; */
+    float: left;
+}
+#twit{
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/twit.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    /* margin: 0 auto; */
+    float: right;
+    margin-left: 20px;
+}
+/*  */
+
+/* roadmap */
+#roadmapbody{
+    height: 650px;
+    background-image:url(../images/background.png);
+    /* background-color: gray; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    background-attachment: fixed;
+}
+#roadmapbody>header{
+    height: 180px;
+}
+#roadmap{
+    width: 200px;
+    height: 70px;
+    /* border: 1px solid black; */
+    /* margin:0 auto;  */
+    background-color: white;
+    margin:0 auto;
+    /* float: left; */
+    padding: 10px;
+    border-radius: 30px;
+    
+}
+#study{
+    width: 100px;
+    height: 50px;
+    /* border: 1px solid black; */
+    /* margin:0 auto;  */
+    background-color: white;
+    margin:0 auto;
+    /* float: left; */
+    padding: 10px;
+    border-radius: 20px;
+
+}
+#roadmap>p{
+    font-size: 20px;
+    text-align: center;
+}
+#study>p{
+    font-size: 15px;
+    text-align: center;
+}
+/* #roadmapbox1:hover #roadmapbox2{
+    opacity: 1;
+    transition-duration: .6s;
+} */
+#roadmapbox1{
+    width: 50%;
+    margin: 0 auto;
+}
+#roadmapbox2{
+    width: 20%;
+    /* margin: 0 auto; */
+    float: left;
+    margin-left: 20%;
+    opacity: 1;
+    
+}
+#roadmapbox2>#roadmap{
+    width: 200px;
+    height: 70px;
+    /* border: 1px solid black; */
+    /* margin:0 auto;  */
+    background-color: white;
+    margin:0 auto;
+    /* float: left; */
+    padding: 10px;
+    border-radius: 30px;
+}
+#roadmapbox3{
+    width: 20%;
+    /* margin: 0 auto; */
+    float: right;
+    margin-right: 20%;
+    opacity: 1;
+}
+/*  */
+
+/* join */
+table{
+    /* background-color: cornflowerblue; */
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+#tablebox{
+    background-color: rgb(235, 235, 235);
+    opacity: .9;
+    border-radius: 30px;
+    width: 30%;
+    margin: 0 auto;
+}
+table#enroll {
+    /* border: 1px solid; */
+    border-spacing: 10px;
+    width: 500px;
+    margin: 0 auto;
+    /* box-shadow: 1px 1px 100px blue; */
+}
+
+table#enroll th {
+    text-align: right;
+}
+
+table#enroll td.btn-wrapper {
+    text-align: center;
+}
+
+.phone {
+    width: 30px;
+}
+
+span.req {
+    color: red;
+}
+
+.short {
+    width: 50px;
+}
+#submit {
+    background: #150c47;
+    border: none;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+    color: white;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    margin: auto;
+    padding: 7px 25px;
+    /* text-shadow: 0 1px 1px #000000; */
+    text-transform: uppercase;
+    opacity: .9;
+}
+            
+#submit:hover {
+    background: #3f2e9f;
+    /* color: white; */
+    cursor: pointer;
+}
+/*  */

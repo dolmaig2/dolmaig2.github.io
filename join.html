@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>회원가입</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+   
+</head>
+<header>
+    <a href="index.html">
+        <div id="gomain">메인으로</div>
+    </a>
+    <div id=""><br><br><br><br>
+
+        <!-- <h1 id="myname">회원가입</h1> -->
+    </div>
+    <br>
+    <!-- <div id="mypic"></div> -->
+</header>
+
+<body id="indexbody">
+    
+    <form action="javascript:alert('가입이 완료되었습니다');" onsubmit="return validate();">
+        <div id="tablebox">
+        <table id="enroll">
+            <tr>
+                <th>아이디<span class="req">*</span></th>
+                <td>
+                    <input type="text" name="userId" id="userId">
+                </td>
+            </tr>
+            <tr>
+                <th>비밀번호<span class="req">*</span></th>
+                <td>
+                    <input type="password" name="pwd" id="pwd">
+                </td>
+            </tr>
+            <tr>
+                <th>비밀번호확인</th>
+                <td>
+                    <input type="password" id="pwdCheck">
+                </td>
+            </tr>
+            <tr>
+                <th>닉네임<span class="req">*</span></th>
+                <td>
+                    <input type="text" name="userName" id="userName">
+                </td>
+            </tr>
+            
+            <tr>
+                <th>이메일<span class="req">*</span></th>
+                <td>
+                    <input type="email" name="email" id="email">
+                </td>
+            </tr>
+            
+            <tr>
+                <th>하고싶은 말</th>
+                <td>
+                    
+                    <textarea id="content" cols="20" rows="10"></textarea>
+                    <p><span id="counter">0</span>/30</p>
+                    
+                    
+                    
+                      
+                  
+                </td>
+            </tr>
+            
+                <td colspan="2" class="btn-wrapper">
+                    <input id="submit" type="submit" value="가입하기" id="join">&nbsp;
+                    <script src="js/join.js"></script>
+                    
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+        
+    </form>
+
+    
+   
+
+   
+
+
+</body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer id="myfooter">
+        <p align=center>Copyright ⓒ 1995-2099 molla amoomal geunyang maksseum morago haeyadae All Right Reserved</p>
+    </footer>
+
+</html>

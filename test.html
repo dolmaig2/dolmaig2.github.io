@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WebStorage</title>
+  <script src="js/jquery-3.5.1.js"></script>
+  <script>
+  if(window.localStorage){
+    console.log("이 브라우져는 WebStorage를 사용할 수 있습니다.");
+  }
+  else {
+    console.log("이 브라우져는 WebStorage를 사용할 수 없습니다.");
+  }
+  </script>
+</head>
+<body>
+  <h1>WebStorage</h1>
+  <h3>저장 setItem</h3>
+  <input type="text" id="key1" placeholder="key">
+  <input type="text" id="value1" placeholder="value">
+  <input type="button" value="저장" id="btn1">
+  <script>
+  $("#btn1").click(function(){
+    let k = $("#key1").val();
+    let v = $("#value1").val();
+
+    if(k == '' || v == ''){
+      alert("입력값이 없습니다.");
+      return;
+    }
+
+    localStorage.setItem(k, v);
+
+    $("#key1, #value1").val("");
+  });
+  
+  </script>
+
+  <h2>불러오기</h2>
+  <input type="text" id="key2" placeholder="key">
+  <input type="button" value="가져오기" id="btn2">
+  <script>
+  $("#btn2").click(function(){
+    let k = $("#key2").val();
+    let v = localStorage.getItem(k);
+
+    console.log(typeof v);
+
+    if(v != null)
+      alert(v);
+    else 
+      alert("값이 존재하지 않습니다.");
+
+  });
+  
+  
+  </script>
+
+  <h2>삭제하기</h2>
+  <input type="text" id="key3" placeholder="key">
+  <input type="button" value="삭제" id="btn3">
+  <script>
+  $("#btn3").click(function(){
+    let k = $("#key3").val();
+    localStorage.removeItem(k);
+  });
+  
+  </script>
+
+  <h2>전체삭제</h2>
+  <input type="button" value="전체삭제" 
+         onclick="localStorage.clear();">
+
+  <hr>
+
+  <h2>객체 관리하기</h2>
+  <script>
+  $(function(){
+    let user = {
+      id : "honggd",
+      name : "홍길동",
+      age : 30
+    }
+
+    // localStorage.setItem("honggd", user);
+
+    // alert(JSON.stringify(["안녕", 1,2,3, true, {name: "홍길동"}]));
+    
+    //객체, 배열을 json문자열로 변환하여 저장
+    let jsonStr = JSON.stringify(user);
+    // alert(jsonStr);
+    localStorage.setItem("honggd", jsonStr);
+
+    let returnJsonStr = localStorage.getItem("honggd");
+    console.log(returnJsonStr, typeof returnJsonStr);
+    let jsObj = JSON.parse(returnJsonStr);
+    console.log(jsObj);
+  });
+  
+  </script>
+  
+  <h2>방명록관리</h2>
+  <form action="javascript:saveEntry();">
+    <input type="text" id="guest">
+    <input type="text" id="memo">
+    <input type="submit" value="저장">
+  </form>
+  <table id="tbl-guestBook"></table>
+  <style>
+  table, th, td {
+    margin-top: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+  } 
+  </style>
+  <script>
+  $(function(){
+    getGuestBook();
+  });
+
+
+
+  function saveEntry(){
+    let entry = {
+      guest: $("#guest").val(),
+      memo: $("#memo").val(),
+      date: Date.now()
+    }
+    console.log(entry);
+
+
+
+    let guestBook = JSON.parse(localStorage.getItem("guestBook"));
+    //첫 방문록 작성시
+    if(guestBook == null) 
+      guestBook = [];
+
+    guestBook.push(entry);
+
+    console.log(guestBook);
+
+    localStorage.setItem("guestBook", JSON.stringify(guestBook));
+    
+    $("#guest, #memo").val('');
+
+    getGuestBook();
+
+  }
+
+  function getGuestBook(){
+    let header = "<tr><th>글쓴이</th><th>메모</th><th>작성일</th></tr>";
+    $("#tbl-guestBook").html(header);
+
+    let guestBook = JSON.parse(localStorage.getItem("guestBook"));
+    $(guestBook).each(function(i, entry){
+      let d = new Date(entry.date);
+      let html = "<tr>"
+               + "<td>" + entry.guest + "</td>"
+               + "<td>" + entry.memo + "</td>"
+               + "<td>" + d.getMonth() + "/" + d.getDate() + " " + d.getHours() + ":" + d.getMinutes() + "</td>"
+               + "</tr>";
+      $("#tbl-guestBook").append(html);
+
+    })
+
+  }
+  
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
